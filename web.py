@@ -20,6 +20,7 @@
 import streamlit as st
 import pandas as pd
 import logging
+import os
 from datetime import datetime
 
 
@@ -604,8 +605,9 @@ def main():
     # Đọc tham số URL
     query_params = st.query_params
     
-    # Tải Dữ liệu (Data Loading) - Đọc file nén .gz để tối ưu dung lượng
-    DATA_PATH = "data_merged_1.csv.gz"
+    # Tải Dữ liệu (Data Loading) - Sử dụng đường dẫn tương đối theo vị trí của file web.py
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    DATA_PATH = os.path.join(current_dir, "data_merged_1.csv.gz")
     df = load_data(DATA_PATH)
     
     if df.empty:
