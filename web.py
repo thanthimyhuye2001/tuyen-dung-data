@@ -259,7 +259,7 @@ def apply_custom_css():
 def render_header():
     """Hiển thị phần tiêu đề và mô tả của trang web."""
     st.markdown('<h1 style="font-size: 44px; font-weight: 800; color: #111827; text-align: center;">Việc làm <span style="color: #14489c;">Data</span> tại Việt Nam</h1>', unsafe_allow_html=True)
-    st.markdown('<p style="color: #6b7280; font-size: 18px; margin-bottom: 32px; text-align: center;">Cơ hội Data Analyst, Data Engineer, Data Scientist và AI/ML tại Việt Nam</p>', unsafe_allow_html=True)
+    st.markdown('<p style="color: #6b7280; font-size: 18px; margin-bottom: 32px; text-align: center;">Cơ hội trong lĩnh vực data tại Việt Nam</p>', unsafe_allow_html=True)
 
 def render_filters(df: pd.DataFrame) -> tuple:
     """Hiển thị bộ lọc và trả về các giá trị bộ lọc do người dùng chọn."""
