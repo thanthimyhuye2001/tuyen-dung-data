@@ -279,7 +279,7 @@ def render_filters(df: pd.DataFrame) -> tuple:
         st.button("TÌM KIẾM", type="primary", use_container_width=True)
         
     with col1:
-        search_query = st.text_input("Tìm kiếm", placeholder="🔍 Vị trí tuyển dụng trong lĩnh vực data. Ví dụ: Data Analyst ...", label_visibility="hidden")
+        search_query = st.text_input("Tìm kiếm", placeholder="🔍 Ví dụ: Data Analyst ...", label_visibility="hidden")
         
     with col_filter:
         st.markdown('<div style="height: 28px;"></div>', unsafe_allow_html=True)
