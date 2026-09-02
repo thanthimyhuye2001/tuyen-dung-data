@@ -562,7 +562,7 @@ def render_job_detail(df: pd.DataFrame, job_idx: int):
     </div>
     
     <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 24px; font-size: 14px; font-weight: 600; color: #4b5563;">
-        <span style="color: #1d4ed8; display: flex; align-items: center; gap: 4px; font-size: 15px;">💵 {salary}</span>
+        <span style="color: #1d4ed8; display: flex; align-items: center; gap: 4px; font-size: 15px;">\U0001F4B0 {salary}</span>
         <span style="color: #d1d5db;">|</span>
         <span style="display: flex; align-items: center; gap: 4px;">📍 {location}</span>
         {f'<span style="color: #d1d5db;">|</span>{level_html}' if level_html else ''}
